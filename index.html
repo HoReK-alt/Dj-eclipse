@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DJ Eclipse</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script> <!-- Cambia yourkit.js -->
+</head>
+<body>
+  <header>
+  <nav class="nav-container">
+    <h1>DJ Eclipse</h1>
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#horarios">Horarios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section id="inicio" class="section">
+    <div class="contenido">
+      <h2>Bienvenido al show</h2>
+      <p>Electrónica, reggaetón y beats que hacen vibrar la noche.</p>
+      <a href="#contacto" class="boton">¡Contrátame!</a>
+
+      <!-- 🎧 Reproductor de música -->
+      
+      <a href="https://www.youtube.com/watch?v=z_Huxz2E9D8" target="_blank" style="display: inline-block; text-decoration: none;">
+  <img src="https://img.youtube.com/vi/z_Huxz2E9D8/0.jpg" alt="Ver video en YouTube" 
+       style="width:100%; max-width:560px; border: none;">
+  <div style="position: relative; top: -50%; left: 50%; transform: translate(-50%, -50%);
+              font-size: 48px; color: white; text-shadow: 0 0 8px black;">
+    ▶
+  </div>
+</a>
+
+      <!-- 🔗 Redes sociales -->
+      <div class="social">
+        <a href="https://instagram.com/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://spotify.com/" target="_blank" class="icon"><i class="fab fa-spotify"></i></a>
+        <a href="https://youtube.com/" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="horarios" class="section horarios">
+    <h2>Próximos Shows</h2>
+    <ul>
+      <li><strong>Viernes:</strong> Club Nocturno - 00:00 a 04:00</li>
+      <li><strong>Sábado:</strong> Sunset Party - 18:00 a 22:00</li>
+      <li><strong>Domingo:</strong> Chill Vibes Online - 20:00 a 22:00</li>
+    </ul>
+  </section>
+  <fieldset>
+ <legend>Contacto</legend>
+  <section id="contacto" class="section contacto">
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  </fieldset>
+  <footer>
+    <p>&copy; 2025 Gmarketglobal - Todos los derechos reservados.</p>
+  </footer>
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+</body>
+</html>
